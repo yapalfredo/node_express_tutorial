@@ -1,5 +1,7 @@
 const {readFile, writeFile} = require('fs')
 
+
+console.log('start')
 readFile('./content/test2.txt', 'utf8', (err, result) => {
 
     if (err){
@@ -26,6 +28,8 @@ readFile('./content/test2.txt', 'utf8', (err, result) => {
                     return;
                 }
                 console.log(result)
+                console.log('done with task')
             })
     })
 })
+console.log('starting the task')
